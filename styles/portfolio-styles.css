@@ -1,7 +1,98 @@
-h1 {
-  font-family: "Pacifico", cursive;
-  margin: 0 auto;
+:root {
+  --btn-padding: 20px 40px;
+  --btn-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  --btn-border: 1px solid #edd9d5;
+  --btn-radius: 4px;
+  --btn-font-size: 20px;
+  --btn-backgrround: #edd9d5;
 }
-p {
+body {
+  background-image: url(/src/white-wall-portfolio.jpg);
+  background-size: cover;
+}
+.main-heading {
+  margin-top: 120px;
+}
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
   text-align: center;
+}
+h1 {
+  margin-top: 10px;
+  font-size: 50px;
+  text-align: center;
+  font-family: "Pacifico", cursive;
+}
+h3 {
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+}
+
+.work-btn,
+.about-btn,
+.contact-btn {
+  padding: var(--btn-padding);
+  box-shadow: var(--btn-shadow);
+  border: var(--btn-border);
+  border-radius: var(--btn-radius);
+  font-size: var(--btn-font-size);
+  background-color: var(--btn-backgrround);
+}
+.main-a {
+  margin: 20px 60px;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 800px;
+  margin: auto;
+}
+.git,
+.linkedIn,
+.insta {
+  margin: 20px 60px;
+  font-size: 25px;
+}
+.social-a {
+  text-decoration: none;
+  color: black;
+}
+@media (max-width: 750px) {
+  .main-heading {
+    margin-top: 50px;
+  }
+  .buttons {
+    margin-top: 20px;
+  }
+  .main-a {
+    margin: 20px 60px;
+  }
+}
+@media (max-width: 550px) {
+  .work-btn,
+  .about-btn,
+  .contact-btn {
+    font-size: 15px;
+    padding: 10px 10px;
+  }
+  .main-a {
+    margin: 40px 10px;
+  }
+  .git,
+  .linkedIn,
+  .insta {
+    margin: 20px 20px;
+    font-size: 15px;
+  }
 }
