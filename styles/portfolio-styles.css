@@ -29,6 +29,11 @@ h3 {
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
+
+.container {
+  max-width: 800px;
+}
+
 .buttons {
   display: flex;
   justify-content: center;
@@ -68,6 +73,7 @@ h3 {
   text-decoration: none;
   color: black;
 }
+
 @media (max-width: 750px) {
   .main-heading {
     margin-top: 50px;
@@ -94,5 +100,90 @@ h3 {
   .insta {
     margin: 20px 20px;
     font-size: 15px;
+  }
+}
+
+/** work page**/
+
+:root {
+  --secondary-btn-padding: 5px 10px;
+  --secondary-btn-backgorund: #edd9d5;
+  --secondary-btn-border: 1px solid #edd9d5;
+  --secondary-btn-border-radius: 4px;
+  --secondary-btn-color: black;
+}
+.secondary-btn {
+  padding: var(--secondary-btn-padding);
+  background-color: var(--secondary-btn-backgorund);
+  border: var(--secondary-btn-border);
+  border-radius: var(--secondary-btn-border-radius);
+  color: var(--secondary-btn-color);
+}
+.weather-container,
+.world-container,
+.croissant-container {
+  background-color: #d6b7b6;
+  border: 1px solid #d6b7b6 !important;
+}
+
+.weather,
+.worldClock,
+.croissant {
+  margin-top: 66px !important;
+}
+.h2-work {
+  margin-top: -50px;
+}
+.h3-work {
+  margin-top: 25px;
+}
+@media (max-width: 750px) {
+  .weather-img {
+    margin-top: 10px;
+    background-color: white;
+    border: none !important;
+    border-radius: 4px !important;
+    width: 80%;
+  }
+  .world-img {
+    margin-top: 10px;
+    background-color: white;
+    border: none !important;
+    border-radius: 4px !important;
+    width: 80%;
+  }
+  .croissant-img {
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 4px !important;
+    width: 80%;
+  }
+  .secondary-btn:hover {
+    transform: none;
+    transition: none;
+    background-color: #d7a184;
+  }
+  .weather-img:hover,
+  .world-img:hover,
+  .croissant-img:hover {
+    transform: none;
+    transition: none;
+  }
+
+  .project-title {
+    font-size: 30px;
+  }
+  .weather-container,
+  .world-container,
+  .croissant-container {
+    border: none !important;
+  }
+  .weather,
+  .croissant,
+  .worldClock {
+    margin-top: 0px !important;
+  }
+  .h2-work {
+    margin-top: -20px;
   }
 }
