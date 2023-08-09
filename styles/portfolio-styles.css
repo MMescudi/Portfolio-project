@@ -106,24 +106,23 @@ h3 {
 /** work page**/
 
 :root {
-  --secondary-btn-padding: 5px 10px;
+  --secondary-btn-padding: 10px 15px;
   --secondary-btn-backgorund: #edd9d5;
   --secondary-btn-border: 1px solid #edd9d5;
   --secondary-btn-border-radius: 4px;
   --secondary-btn-color: black;
 }
+.container-body {
+  max-width: 800px;
+  margin: 40px auto;
+}
+
 .secondary-btn {
   padding: var(--secondary-btn-padding);
   background-color: var(--secondary-btn-backgorund);
   border: var(--secondary-btn-border);
   border-radius: var(--secondary-btn-border-radius);
   color: var(--secondary-btn-color);
-}
-.weather-container,
-.world-container,
-.croissant-container {
-  background-color: #d6b7b6;
-  border: 1px solid #d6b7b6 !important;
 }
 
 .weather,
