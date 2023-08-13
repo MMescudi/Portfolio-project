@@ -52,6 +52,7 @@ h3 {
 }
 .main-a {
   margin: 20px 60px;
+  font-family: "Poppins", sans-serif;
 }
 .social {
   display: flex;
@@ -84,6 +85,9 @@ h3 {
   .main-a {
     margin: 20px 60px;
   }
+  .p {
+    font-size: 10px;
+  }
 }
 @media (max-width: 550px) {
   .work-btn,
@@ -93,13 +97,20 @@ h3 {
     padding: 10px 10px;
   }
   .main-a {
-    margin: 40px 10px;
+    margin: 40px 20px;
+    font-size: 0px;
   }
   .git,
   .linkedIn,
   .insta {
     margin: 20px 20px;
     font-size: 15px;
+  }
+  .text-container {
+    margin-top: 10px !important;
+  }
+  .about-text {
+    font-size: 17px !important;
   }
 }
 
@@ -168,7 +179,6 @@ h3 {
     transform: none;
     transition: none;
   }
-
   .project-title {
     font-size: 30px;
   }
@@ -182,7 +192,72 @@ h3 {
   .worldClock {
     margin-top: 0px !important;
   }
-  .h2-work {
+  .h2-work,
+  .h2-contact {
     margin-top: -20px;
+  }
+}
+/** About me page **/
+
+.aboutP-btn {
+  padding: var(--btn-padding);
+  box-shadow: var(--btn-shadow);
+  border: var(--btn-border);
+  border-radius: var(--btn-radius);
+  font-size: var(--btn-font-size);
+  background-color: var(--btn-backgrround);
+}
+.about-btn-a {
+  margin: 20px 60px;
+}
+.about-text {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/**hover**/
+
+.nav-link:hover {
+  transition: ease-in-out 220ms;
+  transform: scale(1.1);
+}
+.navbar-brand:hover {
+  transition: ease-in-out 220ms;
+  transform: scale(1.1);
+}
+
+.work-btn:hover,
+.about-btn:hover,
+.contact-btn:hover {
+  cursor: pointer;
+  background-color: #edc6be;
+  transition: ease-in-out 220ms;
+  transform: scale(1.1);
+}
+
+.secondary-btn:hover {
+  background-color: #edc6be;
+  transition: ease-in-out 220ms;
+  transform: scale(1.1);
+}
+
+.weather-container:hover,
+.world-container:hover,
+.croissant-container:hover {
+  transition: ease-in-out 220ms;
+  transform: scale(1.1);
+}
+@media (max-width: 750px) {
+  .work-btn:hover,
+  .about-btn:hover,
+  .contact-btn:hover {
+    transform: none;
+    transition: none;
+  }
+  .weather-container:hover,
+  .world-container:hover,
+  .croissant-container:hover {
+    transition: none;
+    transform: none;
   }
 }
