@@ -196,6 +196,9 @@ h3 {
   .h2-contact {
     margin-top: -20px;
   }
+  .c-buttons {
+    margin-top: 20px !important;
+  }
 }
 /** About me page **/
 
@@ -213,6 +216,30 @@ h3 {
 .about-text {
   font-size: 20px;
   font-family: "Poppins", sans-serif;
+}
+
+/**contact page**/
+.mail {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 50px;
+  max-width: 400px;
+}
+.mail-link {
+  text-decoration: none;
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+.mail:hover {
+  transition: ease-in-out 220ms;
+  transform: scale(1.1);
+  font-weight: 600;
+}
+
+.c-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 /**hover**/
@@ -257,6 +284,10 @@ h3 {
   .weather-container:hover,
   .world-container:hover,
   .croissant-container:hover {
+    transition: none;
+    transform: none;
+  }
+  .mail:hover {
     transition: none;
     transform: none;
   }
