@@ -54,6 +54,7 @@ h3 {
   margin: 20px 60px;
   font-family: "Poppins", sans-serif;
 }
+
 .social {
   display: flex;
   justify-content: center;
@@ -73,6 +74,11 @@ h3 {
 .social-a {
   text-decoration: none;
   color: black;
+  font-size: 30px;
+}
+.social-a:hover {
+  transition: ease-in-out 220ms;
+  color: #d7a184;
 }
 
 @media (max-width: 750px) {
